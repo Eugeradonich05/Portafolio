@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/MagRadPH/static/css/main.731c6033.css",
+    "main.js": "/MagRadPH/static/js/main.cdcce9e3.js",
+    "static/js/453.a2987c9e.chunk.js": "/MagRadPH/static/js/453.a2987c9e.chunk.js",
+    "static/media/imagen1.webp": "/MagRadPH/static/media/imagen1.e6dbe5179063a00033a7.webp",
+    "static/media/imagen4.webp": "/MagRadPH/static/media/imagen4.94eeb56adc205bb53c0e.webp",
+    "static/media/imagen2.webp": "/MagRadPH/static/media/imagen2.5da81f2e775df1eee73c.webp",
+    "static/media/1212121212.png": "/MagRadPH/static/media/1212121212.9b293f61e9a34e15264f.png",
+    "static/media/imagen3.webp": "/MagRadPH/static/media/imagen3.57bf0230cc505f548f59.webp",
+    "index.html": "/MagRadPH/index.html",
+    "main.731c6033.css.map": "/MagRadPH/static/css/main.731c6033.css.map",
+    "main.cdcce9e3.js.map": "/MagRadPH/static/js/main.cdcce9e3.js.map",
+    "453.a2987c9e.chunk.js.map": "/MagRadPH/static/js/453.a2987c9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.731c6033.css",
+    "static/js/main.cdcce9e3.js"
+  ]
+}
