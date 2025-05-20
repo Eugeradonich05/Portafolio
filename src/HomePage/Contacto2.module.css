@@ -1,0 +1,58 @@
+/* src/sections/Contact.module.css */
+.contactContainer{
+  background-color: #eee8dc;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
+.contactSection {
+  margin: auto;
+  width: 85%;
+  position: relative;
+  background-image: url('../imagenes/imagen1.webp'); /* Asegurate de guardar esa imagen como contact-bg.png */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.3); /* suave overlay si se desea */
+  text-align: center;
+  padding: 6rem;
+  backdrop-filter: blur(2px);
+}
+
+.location {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 3.25rem;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+   background-color: #d7cbb5;
+  color: #2c2c2c;
+  padding: 0.75rem 3.5rem;
+    font-size: 16px;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+
+}
+
+.button:hover {
+  background-color: #d4cfc4;
+}

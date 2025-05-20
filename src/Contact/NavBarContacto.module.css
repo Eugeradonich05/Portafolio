@@ -1,0 +1,68 @@
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Texto oscuro */
+  padding: .5rem 1rem;
+  position: absolute;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 50px;
+  border: 2px solid #000000; /* Borde gris claro */
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.navLink {
+  display: inline-block;
+  padding: .7rem 1.2rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a1a1a; /* Texto oscuro */
+  position: relative;
+}
+
+.navLink:hover {
+  background-color: #f2f2f2; /* Gris claro al pasar el mouse */
+}
+
+.navLinkActive {
+  background-color: #e0e0e0; /* Fondo más oscuro para el activo */
+}
+
+.lightBar {
+  position: absolute;
+  bottom: 0;
+  height: 0.1   5rem;
+  background-color: #000000; /* Amarillo claro */
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  box-shadow: 0 0 10px #000000, 0 0 20px #000000b6, 0 0 30px #ffffff;
+  filter: brightness(1.3);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+  }
+  50% {
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+  }
+}

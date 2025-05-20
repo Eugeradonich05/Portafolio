@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+    width: 100%;
+  height: 80vh;
+    overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+    width: 60%;
+    height: 500px;
+    background: url("../imagenes/imagen1.webp");
+
+}
+
+.title {  
+   font-family: 'Erode', serif;
+   font-weight: 100;
+   font-style: italic;
+     font-size: 100px;
+      text-align: center;
+    margin-top: -200px;
+  color: #ffffff;
+}

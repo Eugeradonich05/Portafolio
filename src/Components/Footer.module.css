@@ -1,0 +1,79 @@
+.footer {
+  text-align: center;
+  background-color: #fcf8e9;
+  padding: 2rem 1rem;
+  font-family: 'Georgia', serif;
+  color: #5e4a4a;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-bottom: 1.5rem;
+}
+
+/* Todas las imágenes empiezan en blanco y negro */
+.image {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Al hacer hover sobre la galería */
+.gallery:hover .image {
+  filter: grayscale(100%);
+  transform: none;
+}
+
+/* Solo la imagen bajo el hover vuelve al color */
+.gallery .image:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.handle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #5e4a4a;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size:14px;
+  letter-spacing: 0.1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nav a {
+  color: #5e4a4a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #b89c92;
+}
+
+.copy {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #a18c84;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: #5e4a4a;
+}

@@ -1,0 +1,68 @@
+.navbarContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.navbar {
+  background-color: #00000000;
+  color: white;
+    padding: .5rem 1rem;
+  position: absolute;
+  width:auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 50px;
+    border: 2px solid #525252;
+z-index: 10;
+}
+
+
+.linkContainer {
+    display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.navLink {
+  display: inline-block;
+  padding: .7rem 1.2rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.navLink:hover {
+  background-color: #292929ad;
+}
+
+.navLinkActive {
+  background-color: #242424ad;
+}
+
+.lightBar {
+  position: absolute;
+  bottom: 0;
+  height: 0.25rem;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+    box-shadow: 0 0 10px #fdfdfc, 0 0 20px #f3f0e5, 0 0 30px #f7efd0;
+  filter: brightness(1.5);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+  }
+  50% {
+    box-shadow: 0 0 20px #facc15, 0 0 40px #facc15;
+      animation: pulseGlow 2s ease-in-out infinite;
+  }
+}

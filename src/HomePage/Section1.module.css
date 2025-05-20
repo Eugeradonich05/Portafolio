@@ -1,0 +1,144 @@
+.section {
+  background-color: #5c482b;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 100;
+   font-family: 'Erode', serif;
+
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  text-align: center;
+  margin-bottom: 4rem;
+   font-family: 'Erode', serif;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "a a b b"
+    "c d d d";
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 300px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card:nth-child(1) { grid-area: a; }
+.card:nth-child(2) { grid-area: b; }
+.card:nth-child(3) { grid-area: c; }
+.card:nth-child(4) { grid-area: d; }
+
+/* Modal Backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 700px;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.modalImage {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.modalContent {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3));
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.modalContent h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.modalContent p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Blurred effect on inactive cards */
+.blurred {
+  filter: blur(4px) brightness(0.7);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+}
+.grid:has(.card:nth-child(1):hover) .card:not(:nth-child(1)) {
+  filter: blur(4px);
+}
+.grid:has(.card:nth-child(2):hover) .card:not(:nth-child(2)) {
+  filter: blur(4px);
+}
+.grid:has(.card:nth-child(3):hover) .card:not(:nth-child(3)) {
+  filter: blur(4px);
+}
+.grid:has(.card:nth-child(4):hover) .card:not(:nth-child(4)) {
+  filter: blur(4px);
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      ". a b "
+      "c c d d";
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
