@@ -1,5 +1,5 @@
 /* src/sections/Features.module.css */
-.featuresSection {
+/* .featuresSection {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -25,6 +25,46 @@
 .title {
   font-size: 30px;
   color: #444;
+  margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 000;
+}
+
+.description {
+  font-size: 15px;
+  color: #777;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+ */
+
+
+ .featuresSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background-color: #1f1f1f;
+  text-align: center;
+
+
+}
+
+
+.featureItem {
+  flex: 1;
+  margin: 0 1rem;
+  max-width: 300px;
+  
+}
+.featureItem:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.title {
+  font-size: 30px;
+  color: #cecece;
   margin-bottom: 0.5rem;
     font-family: 'Playfair Display', serif;
     font-weight: 000;

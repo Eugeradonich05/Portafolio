@@ -54,7 +54,7 @@ export default function Hero() {
             <a href="/contact">
 
           <motion.button
-            className={styles.cta}
+            className={styles.botonelegante}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             
@@ -64,7 +64,7 @@ export default function Hero() {
               </a>
           <a href="/gallery">
           <motion.button
-            className={styles.cta2}
+            className={styles.botonelegante}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
         

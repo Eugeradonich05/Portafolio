@@ -1,4 +1,4 @@
-.About {
+/* .About {
   font-family: sans-serif;
   background: white;
 }
@@ -44,7 +44,6 @@
 .image {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
   box-shadow: 7px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 
@@ -92,7 +91,6 @@ box-shadow: 0px 44px 64px 5px rgba(0,0,0,0.1);
   letter-spacing: 1px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
   width: 100%;
 }
 
@@ -109,7 +107,176 @@ box-shadow: 0px 44px 64px 5px rgba(0,0,0,0.1);
 
 }
 
-/* 🌐 Responsive gradual */
+@media (max-width: 1100px) {
+  .collageContainer {
+    gap: 20px;
+  }
+
+  .imageLarge {
+    max-width: 400px;
+  }
+
+  .imageMedium {
+    max-width: 300px;
+  }
+
+  .imageSmall {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collageContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .leftColumn,
+  .centerColumn,
+  .rightColumn {
+    flex: 0 0 100%;
+    align-items: center;
+  }
+
+  .topLeftTitle {
+    position: static;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .imageLarge,
+  .imageMedium,
+  .imageSmall {
+    max-width: 90%;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .portfolioBtn {
+    width: auto;
+    align-self: center;
+    font-size: 11px;
+  }
+}
+ */
+
+
+
+ .About {
+  font-family: sans-serif;
+  background: #1f1f1f;
+}
+
+.collageSection {
+  position: relative;
+  padding: 50px 40px;
+  overflow: hidden;
+}
+
+.topLeftTitle {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #f1f1f1;
+}
+
+.collageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  color: #f1f1f1;
+
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn {
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.rightColumn {
+  display: flex;
+  gap: 50px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 7px 4px 12px rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.imageLarge {
+  max-width: 680px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  margin-top: 50px;
+  box-shadow: -46px 0px 65px 20px rgba(255, 255, 255, 0.158);
+
+}
+
+.imageMedium {
+  margin-top: 30px;
+  max-width: 340px;
+  height: auto;
+  aspect-ratio: 5 / 6;
+box-shadow: 0px 44px 64px 5px rgba(255, 255, 255, 0.1);
+}
+
+.imageSmall {
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 21 / 8;
+  box-shadow: 32px 0px 50px 33px rgba(255, 255, 255, 0.1);
+}
+
+.location {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.portfolioBtn {
+  margin-top: 100px;
+  background-color: #cacaca;
+  color: rgb(68, 68, 68);
+  font-size: 12px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.description {
+  font-size: 18px;
+  color: #e0e0e0;
+  max-width: 260px;
+  line-height: 1.5;
+  text-align: center;
+  margin: auto;
+     font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+
+
+}
+
 @media (max-width: 1100px) {
   .collageContainer {
     gap: 20px;

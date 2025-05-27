@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './About.module.css';
-import profileImage from '../imagenes/imagen1.webp'; // Asegurate de que la ruta sea correcta
+import profileImage from '../imagenes/imagen3.webp'; // Asegurate de que la ruta sea correcta
 
 export default function About() {
   return (
@@ -39,13 +39,15 @@ export default function About() {
           <p className={styles.paragraph}>
             Ya sea una ceremonia íntima o una gran celebración, mi compromiso es crear imágenes atemporales que cuenten historias que perduren.
           </p>
+          <a href="/contact" className={styles.btnContainer}>
           <motion.button
-            className={styles.button}
+            className={styles.box}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >
+            >
             Conocer más
           </motion.button>
+            </a>
         </motion.div>
       </motion.section>
     </section>

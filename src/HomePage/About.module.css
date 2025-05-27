@@ -1,4 +1,4 @@
-.aboutTodo{
+/* .aboutTodo{
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -32,7 +32,7 @@
   left: -15px;
   width: 80%;
   height: 100%;
-  background-color: #89523d9a; /* Color pastel tipo papel */
+  background-color: #89523d9a; 
   box-shadow: -51px 36px 153px -46px rgba(0,0,0,1);
 -webkit-box-shadow: -51px 36px 153px -46px rgba(0,0,0,1);
 -moz-box-shadow: -51px 36px 153px -46px rgba(0,0,0,1);
@@ -42,7 +42,7 @@
 .image {
   width: 80%;
   object-fit: cover;
-  box-shadow: none; /* sin sombra adicional, el bloque lo reemplaza */
+  box-shadow: none; 
 }
 
 .text {
@@ -100,7 +100,6 @@ align-items: center;
   color: #222222;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px;
   align-self: start;
   transition: background-color 0.3s ease;
   font-family: 'Courier New', Courier, monospace;
@@ -108,4 +107,175 @@ align-items: center;
 
 .button:hover {
   background-color: #c9b19e;
+}
+ */
+ .aboutTodo{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.about {
+  
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  flex-wrap: wrap;
+  background-color: #070707;
+  border: 1px solid #131313;
+}
+
+.imageWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  z-index: 1;
+  
+
+}
+
+.imageWrapper::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 80%;
+  height: 100%;
+  background-color: #3131316c; 
+  box-shadow: -51px 36px 153px -46px rgba(0,0,0,1);
+-webkit-box-shadow: -51px 36px 153px -46px rgba(0,0,0,1);
+-moz-box-shadow: -51px 36px 153px -46px rgba(0,0,0,1);
+  z-index: -1;
+}
+
+.image {
+  width: 80%;
+  object-fit: cover;
+  box-shadow: none; 
+}
+
+.text {
+    position: relative;
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 600px;
+  height: 600px;
+  background-image: url("data:image/svg+xml,%3Csvg width='600' height='10000' viewBox='0 0 600 600' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 300C150 100 450 500 600 300' stroke='%23e5e7eb' stroke-width='4' fill='none'/%3E%3C/svg%3E");
+  
+
+  background-position: center;
+  opacity: 0.4;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.location {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #636363;
+}
+
+.title {
+    text-align: left;
+    font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #636363;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #636363;
+  max-width: 600px;
+}
+
+.btnContainer{
+  margin: auto;
+align-items: center;
+}
+
+
+.button:hover {
+  background-color: #636363;
+}
+.box {
+  width: 200px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: #636363;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
 }

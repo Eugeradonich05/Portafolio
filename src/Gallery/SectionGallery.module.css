@@ -1,4 +1,4 @@
-.gallerySection {
+/* .gallerySection {
   background-color:#4a2711;
   padding: 5rem 2rem;
   display: flex;
@@ -57,6 +57,75 @@
 .date {
   font-size: 0.8rem;
   color: #c3bfb7;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0.3rem;
+} */
+
+.gallerySection {
+   background: url("../imagenes/imagen1.webp"); /* slate-900 */
+  filter: grayscale(100%);
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.galleryHeader{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+background-color: rgba(0, 0, 0, 0.3); /* suave overlay si se desea */
+  backdrop-filter: blur(10px);
+ flex-wrap: wrap;
+}
+.galleryContainer {
+    margin-top: 100px;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1800px;
+  width: 100%;
+    margin-bottom: 100px;
+
+}
+.galleryImage:hover .galleryItem {
+  filter: grayscale(100%) brightness(60%);
+  opacity: 1;
+}
+
+.galleryItem {
+  text-align: center;
+  max-width: 900px;
+  color: #acacac;
+  text-decoration: none;
+}
+
+.galleryItem:hover {
+  filter: none !important;
+  opacity: 1 !important;
+  transform: scale(1.03);
+  z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galleryImage {
+  width: 100%;
+    max-width: 500px;
+  height:400px ;
+  object-fit: cover;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #ffffff;
   margin-top: 1rem;
   letter-spacing: 1px;
 }

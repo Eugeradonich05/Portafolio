@@ -6,6 +6,8 @@
   height: 100vh;
   overflow: hidden;
   background: url("../imagenes/imagen1.webp"); /* slate-900 */
+  filter: grayscale(100%);
+  
   display: flex;
   justify-content: center;
   align-items: center;
