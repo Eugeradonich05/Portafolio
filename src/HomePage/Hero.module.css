@@ -233,3 +233,45 @@
   border-color: #666666;
   background: #292929;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .title {
+    font-size: 60px;
+    margin-top: 0px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: -40px;
+  }
+  
+  .cta, .cta2 {
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+  }
+  
+  .BtnContainer {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .aurora {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: 
+              radial-gradient(circle at 30% 30%, rgba(37, 37, 37, 0.514), transparent 60%),
+              radial-gradient(circle at 70% 60%, rgba(68, 41, 23, 0.24), transparent 60%),
+              radial-gradient(circle at 30% 90%, #faf3e0, transparent 20%);
+  animation: auroraMotion 5s ease-in-out infinite;
+  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.7;
+}
+  
+}

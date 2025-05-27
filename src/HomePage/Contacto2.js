@@ -10,9 +10,9 @@ export default function Contact() {
     <section className={styles.contactSection}>
       <div className={styles.overlay}>
         <p className={styles.location}>BASED IN ROSARIO, ARGENTINA</p>
-        <h2 className={styles.heading}>MANDAME UN CORREO PIDIENDO COces</h2>
+        <h2 className={styles.heading}>Contactame a traves de un correo electronico</h2>
         <Link to="/contact" className={styles.link}>
-  <button className={styles.button}>LET'S CHAT</button>
+  <button className={styles.button}>Conversemos</button>
 </Link>
       </div>
     </section>

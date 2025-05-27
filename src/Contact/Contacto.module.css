@@ -275,7 +275,6 @@ input:focus {
 
 .mainImage {
   width: 400px;
-  border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 2;
@@ -288,7 +287,6 @@ input:focus {
   right: -40px;
   filter: grayscale(100%);
   opacity: 0.85;
-  border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -312,12 +310,15 @@ input:focus {
 
   .mainImage {
     width: 260px;
+    filter: grayscale(60%);
+    
   }
 
   .secondaryImage {
     width: 220px;
     bottom: -15px;
     right: -30px;
+    opacity: 0;
   }
 
   .row {

@@ -36,10 +36,14 @@
 
         <p className={styles.copy}>© 2025 MG Radonich PH</p>
 
-        <div className={styles.social}>
-            <FaTiktok size={26} />
-            <FaInstagram size={26} />
-        </div>
+      <div className={styles.social}>
+ 
+    <FaTiktok size={26} />
+  <a href="https://www.instagram.com/by.maggieradonich/?hl=es-la">
+    <FaInstagram size={26} />
+  </a>
+</div>
+
         </footer>
     );
     };

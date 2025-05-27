@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { MoveLeft, MoveRight } from "lucide-react";
 import imagen1 from "../imagenes/imagen1.webp";
 import imagen2 from "../imagenes/imagen2.webp";
@@ -14,26 +14,66 @@ const images = [
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const trackRef = useRef(null);
+
+  const scrollToIndex = (index) => {
+    const track = trackRef.current;
+    const image = track?.children[index];
+    if (image) {
+      track.scrollTo({
+        left: image.offsetLeft - 20, // 20 por el gap
+        behavior: "smooth",
+      });
+    }
+  };
 
   const next = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
+    const newIndex = (currentIndex + 1) % images.length;
+    setCurrentIndex(newIndex);
+    scrollToIndex(newIndex);
   };
 
   const prev = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? images.length - 1 : prev - 1
-    );
+    const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    scrollToIndex(newIndex);
   };
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const handleScroll = () => {
+      const children = Array.from(track.children);
+      const scrollLeft = track.scrollLeft;
+      const center = scrollLeft + track.clientWidth / 2;
+
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      children.forEach((child, index) => {
+        const childCenter = child.offsetLeft + child.clientWidth / 2;
+        const distance = Math.abs(center - childCenter);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      setCurrentIndex(closestIndex);
+    };
+
+    track.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      track.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className={styles.carouselContainer}>
       <div className={styles.carouselWrapper}>
-        <div
-          className={styles.imageTrack}
-          style={{
-            transform: `translateX(-${currentIndex * (100 / 3)}%)`, // 3 images visible
-          }}
-        >
+        <div className={styles.imageTrack} ref={trackRef}>
           {images.map((src, index) => (
             <img
               key={index}
@@ -64,4 +104,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
- 

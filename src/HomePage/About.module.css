@@ -279,3 +279,46 @@ button {
   border: none;
   background: transparent;
 }
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse;
+    padding: 3rem 1rem;
+  }
+
+  .text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .text::before {
+    display: none;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+  .imageWrapper::before {
+    opacity: 0;
+  }
+
+  .image {
+    width: 60%;
+    max-width: 350px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .btnContainer {
+    justify-content: center;
+    align-self: center;
+  }
+}

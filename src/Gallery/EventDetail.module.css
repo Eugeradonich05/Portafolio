@@ -33,7 +33,11 @@
 }
 
 @media (max-width: 480px) {
+  .container{
+    margin-top: -80px;
+  }
   .grid {
+
     column-count: 1;
   }
 }

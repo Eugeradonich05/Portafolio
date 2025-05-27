@@ -1,19 +1,16 @@
-/* src/sections/Contact.module.css */
-.contactContainer{
+.contactContainer {
   background-color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
-
 }
 
 .contactSection {
   margin: auto;
   width: 85%;
   position: relative;
-  background-image: url('../imagenes/imagen1.webp'); /* Asegurate de guardar esa imagen como contact-bg.png */
+  background-image: url('../imagenes/imagen1.webp');
   background-size: cover;
   filter: grayscale(100%);
-
   background-position: center;
   height: 70vh;
   display: flex;
@@ -22,10 +19,11 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.3); /* suave overlay si se desea */
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   text-align: center;
   padding: 6rem;
+  width: 100%;
 }
 
 .location {
@@ -42,44 +40,56 @@
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
+
 .button {
- appearance: none;
- background-color: transparent;
- border: 0.125em solid #1A1A1A;
- box-sizing: border-box;
- color: #e7e7e7;
- cursor: pointer;
- display: inline-block;
- font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
- font-size: 16px;
- font-weight: 600;
- line-height: normal;
- margin: 0;
- min-height: 3.75em;
- min-width: 0;
- outline: none;
- padding: 1em 2.3em;
- text-align: center;
- text-decoration: none;
- transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- will-change: transform;
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  box-sizing: border-box;
+  color: #e7e7e7;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
 }
 
 .button:disabled {
- pointer-events: none;
+  pointer-events: none;
 }
 
 .button:hover {
- color: #fff;
- background-color: #1A1A1A;
- box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
- transform: translateY(-2px);
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
 
 .button:active {
- box-shadow: none;
- transform: translateY(0);
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .location{
+    font-size: 0.7rem;
+  }
+  .heading {
+    font-size: 2.25rem;
+  }
+
+  .overlay {
+    padding: 3rem 1rem;
+  }
 }
