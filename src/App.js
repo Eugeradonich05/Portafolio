@@ -14,6 +14,7 @@ import SectionGallery from './Gallery/SectionGallery';
 import Contacto from './Contact/Contacto';
 import NavBarContacto from './Contact/NavBarContacto';
 import EventDetail from './Gallery/EventDetail';
+import Hola from "./HomePage/hola"
 function App() {
   return (
     <div className="App">
@@ -21,12 +22,13 @@ function App() {
       <NavBars />
       {/* Acá van tus rutas */}
       <Routes>
-        <Route path="/contact" element={<Contacto />} />
+     {/*    <Route path="/contact" element={<Contacto />} />
         <Route path="/" element={<Hero />} />
         <Route path="/gallery" element={<HeroGallery />} />
         <Route path="/event/:eventId" element={<EventDetail />} />
         <Route path="/about" element={<About />} />
-      
+       */}
+       <Hola/>
       </Routes>
 
       {/* Footer también fuera de Routes */}
