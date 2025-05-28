@@ -22,17 +22,16 @@ function App() {
       <NavBars />
       {/* Acá van tus rutas */}
       <Routes>
-     {/*    <Route path="/contact" element={<Contacto />} />
+        <Route path="/contact" element={<Contacto />} />
         <Route path="/" element={<Hero />} />
         <Route path="/gallery" element={<HeroGallery />} />
         <Route path="/event/:eventId" element={<EventDetail />} />
         <Route path="/about" element={<About />} />
-       */}
-       <Hola/>
+      
       </Routes>
 
       {/* Footer también fuera de Routes */}
-      <Footer />
+     { <Footer />}
     </div>
   );
 }
