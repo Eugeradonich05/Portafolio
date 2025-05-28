@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Section1.module.css';
-import imagen1 from "../imagenes/imagen1.webp";
-import imagen2 from "../imagenes/imagen2.webp";
-import imagen3 from "../imagenes/imagen3.webp";
-import imagen4 from "../imagenes/imagen4.webp";
+import casamiento from "../imagenes/casamiento/by.maggieradonich-14.jpg"
+import estudio from "../imagenes/corpo/by.maggieradonich-20.jpg"
+import producto from "../imagenes/Producto/by.maggieradonich-97.jpg"
+import book from "../imagenes/familias/@by.maggieradonich-84.jpg"
 
 const images = [
   {
-    src: imagen2,
+    src: casamiento,
     alt: "Casamientos",
     description: "A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life.",
   },
   {
-    src: imagen1,
-    alt: "Cumpleaños de XV",
+    src: estudio,
+    alt: "Book Fotos",
     description: "A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life.",
   },
   {
-    src: imagen3,
-    alt: "Fotos estudios",
+    src: producto,
+    alt: "Productos",
     description: "A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life.",
   },
   {
-    src: imagen4,
-    alt: "Algo",
+    src: book,
+    alt: "Fotos Familiares",
     title: "Rivers are serene",
     description: "A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life.",
   },

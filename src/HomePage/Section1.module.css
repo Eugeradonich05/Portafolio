@@ -191,6 +191,7 @@
   width: 90%;
   max-width: 700px;
   z-index: 999;
+  align-content: flex-end;
 }
 .modalImage {
   align-content: center;

@@ -1,15 +1,24 @@
 import { useRef, useState, useEffect } from "react";
 import { MoveLeft, MoveRight } from "lucide-react";
-import imagen1 from "../imagenes/imagen1.webp";
-import imagen2 from "../imagenes/imagen2.webp";
-import imagen3 from "../imagenes/imagen3.webp";
-import imagen4 from "../imagenes/imagen4.webp";
+import gall1 from "../imagenes/15/@by.maggieradonich-18.jpg";
+import gall2 from "../imagenes/15/@by.maggieradonich-40.jpg";
+import gall3 from "../imagenes/15/@by.maggieradonich-53.jpg";
+import gall4 from "../imagenes/Producto/_DSC7850.jpg";
+import gall5 from "../imagenes/Producto/_DSC7876.jpg";
+import gall6 from "../imagenes/Producto/by.maggieradonich-12 (2).jpg";
+import gall7 from "../imagenes/casamiento/by.maggieradonich-125.jpg";
+import gall8 from "../imagenes/casamiento/by.maggieradonich-130.jpg";
+import gall9 from "../imagenes/casamiento/by.maggieradonich-133.jpg";
+import gall10 from "../imagenes/corpo/by.maggieradonich-16 (3).jpg";
+import gall11 from "../imagenes/corpo/by.maggieradonich-18 (2).jpg";
+import gall12 from "../imagenes/corpo/by.maggieradonich-2 (2).jpg";
+import gall13 from "../imagenes/familias/@by.maggieradonich-37.jpg";
+import gall14 from "../imagenes/familias/@by.maggieradonich-47.jpg";
+import gall15 from "../imagenes/familias/@by.maggieradonich-8.jpg";
 import styles from "./Carrousel.module.css";
 
 const images = [
-  imagen1, imagen2, imagen3, imagen4,
-  imagen1, imagen2, imagen3, imagen4,
-  imagen1, imagen2, imagen3, imagen4,
+gall1,gall2,gall3,gall4,gall5,gall6,gall7,gall8,gall9,gall10,gall11,gall12,gall13,gall14,gall15
 ];
 
 const Carousel = () => {

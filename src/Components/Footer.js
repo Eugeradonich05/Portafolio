@@ -5,12 +5,17 @@
     import imagen3 from "../imagenes/imagen3.webp";
     import imagen4 from "../imagenes/imagen4.webp";
 
+    import cas1 from "../imagenes/casamiento/by.maggieradonich-17.jpg"
+    import cas2 from "../imagenes/casamiento/by.maggieradonich-170.jpg"
+    import fami1 from "../imagenes/familias/@maggieradonich_ph-39 (1).jpg"
+    import fami2 from "../imagenes/familias/@maggieradonich_ph-44.jpg"
+    import cum1 from "../imagenes/15/@maggieradonich_ph-34.jpg"
+    import cum2 from "../imagenes/15/@maggieradonich_ph-30.jpg"
+
+
     const Footer = () => {
     const images = [
-        imagen1, imagen2, imagen3, imagen4,
-        imagen1, imagen2, 
-        
-    ];
+       cas1,cas2,fami1,fami2,cum1,cum2];
 
     return (
         <footer className={styles.footer}>
